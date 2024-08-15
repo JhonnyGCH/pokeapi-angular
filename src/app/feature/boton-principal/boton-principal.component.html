@@ -1,0 +1,13 @@
+<div class="floating-container">
+    <button mat-fab  (click)="toggleButtons()" class="main-button">
+      <mat-icon>add</mat-icon>
+    </button>
+    <div *ngIf="buttonsVisible" class="button-group">
+      <button (click)="addMore()" mat-mini-fab color="accent" class="sub-button">
+        <mat-icon>add</mat-icon>
+      </button>
+      <button (click)="favorite()" mat-mini-fab color="warn" class="sub-button">
+        <mat-icon>favorite</mat-icon>
+      </button>
+    </div>
+  </div>

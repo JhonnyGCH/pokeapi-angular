@@ -1,0 +1,2 @@
+export interface Response<T> {
+}

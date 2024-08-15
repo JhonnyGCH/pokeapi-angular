@@ -1,0 +1,47 @@
+.center-login{
+    position: absolute;
+    left: 100px;
+}
+.btn-login{
+    background-color: rgb(147, 135, 211);
+    color: white;
+    font-weight: 700;
+}
+
+.semicircle {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 40%;
+    height: 100%;
+    background: #ffffff;
+    border-top-right-radius: 100%;
+    border-bottom-right-radius: 100%;
+    z-index: 1;
+  }
+.back{
+    background-color: rgb(147, 135, 211);
+    width: 210.8vh;
+    height: 100vh;
+}
+
+.poke-title{
+    position: absolute;
+    top: 20%;
+    right: 0;
+    width: 40%;
+    /* height: 0%; */
+    z-index: 100;
+}
+
+.poke-title h2{
+    color: white;
+    font-weight: 700;
+    font-size: 15rem;
+}
+
+.poke-title h2:nth-child(2){
+    color: white;
+    font-weight: 700;
+    font-size: 10rem;
+}

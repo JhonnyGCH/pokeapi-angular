@@ -1,0 +1,22 @@
+<div class="floating-navbar navbar bg-base-100 rounded-lg shadow">
+    <div class="flex-1">
+      <a class="btn btn-ghost text-xl title">Pokedex</a>
+    </div>
+    <div class="flex-none gap-2 me-4">
+      <div class="">
+        <input type="text" (keyup)="searchPokemon($event)" placeholder="Search" class="input input-bordered w-24 md:w-auto" />
+      </div>
+      <div class="dropdown dropdown-end">
+        <div tabindex="0" class="btn btn-ghost btn-circle avatar">
+          <div class="w-10 rounded-full">
+            <img src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp" alt="Avatar" />
+          </div>
+        </div>
+        <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box ">
+          <li><a>Profile</a></li>
+          <li><a>Settings</a></li>
+          <li><a (click)="logout()">Logout</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>

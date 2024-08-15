@@ -1,0 +1,24 @@
+<div class="back">
+    <div class="poke-title flex flex-col items-end">
+        <h2>Poke</h2>
+        <h2>dex</h2>
+    </div>
+    <div class="semicircle"></div>
+    <div class="min-h-screen flex items-center justify-start center-login">
+        <div class="max-w-md w-full bg-white p-8 rounded-lg shadow z-10">
+            <h2 class="text-2xl font-bold mb-6">Login</h2>
+            <form  (submit)="login()">
+                <div class="mb-4">
+                    <label for="name" class="block text-sm font-medium text-gray-700">Name</label>
+                    <input name="name" [(ngModel)]="name" type="text" id="name" class="form-control mt-1 block w-full" placeholder="Enter your name">
+                </div>
+                <div class="mb-6">
+                    <label for="password" class="block text-sm font-medium text-gray-700">Password</label>
+                    <input name="password" [(ngModel)]="password" type="password" id="password" class="form-control mt-1 block w-full"
+                        placeholder="Enter your password">
+                </div>
+                <button type="submit" class="btn w-full btn-login">Login</button>
+            </form>
+        </div>
+    </div>
+</div>

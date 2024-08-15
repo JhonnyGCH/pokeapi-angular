@@ -1,0 +1,65 @@
+<app-boton-principal></app-boton-principal>
+<app-navbar></app-navbar>
+
+<div class="content  bg-base-100 rounded-lg shadow">
+
+  <div class="overflow-x-auto">
+    <table class="table mb-0">
+      <!-- head -->
+      <thead>
+        <tr>
+          <th>
+            <!-- <label>
+              <input type="checkbox" class="checkbox" />
+            </label> -->
+          </th>
+          <th>Pokemon</th>
+          <th>Habilidad Principal</th>
+          <th>Tipo</th>
+          <!-- <th>Details</th> -->
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Aquí se usa ngFor para iterar sobre pokemonData -->
+        <tr *ngFor="let pokemon of pokemonesData">
+          <th>
+            <label class="ms-4" for="checkbox-id">
+              <!-- Puedes agregar un checkbox si lo deseas -->
+              <input class="ms-4" type="checkbox" id="checkbox-id" class="checkbox" />
+            </label>
+          </th>
+          <td>
+            <div class="flex items-center gap-3">
+              <div class="avatar">
+                <div class="mask mask-squircle h-12 w-12">
+                  <img [src]="pokemon.sprites.front_default" alt="{{ pokemon.name }}" />
+                </div>
+              </div>
+              <div>
+                <div class="font-bold">{{ pokemon.name }}</div>
+                <div class="text-sm opacity-50">Pokémon</div>
+              </div>
+            </div>
+          </td>
+          <td>
+            <span class="badge badge-neutral ">{{ pokemon.abilities[0].ability.name }}</span>
+          </td>
+          <td>{{ pokemon.types[0].type.name }}</td>
+          <!-- <th>
+            <button class="btn btn-ghost btn-xs">details</button>
+          </th> -->
+        </tr>
+      </tbody>
+      <!-- foot -->
+      <tfoot>
+        <tr>
+          <th></th>
+          <th>Pokemon</th>
+          <th>Habilidad Principal</th>  
+          <th>Tipo</th>
+          <!-- <th></th> -->
+        </tr>
+      </tfoot>
+    </table>
+  </div>
+</div>

@@ -1,0 +1,17 @@
+.floating-navbar {
+    position: fixed;
+    top: 10px;
+    left: 50%;
+    width: 90%;
+    transform: translateX(-50%);
+    z-index: 1000;
+    border-radius: 20px;
+
+    background-color: rgb(147, 135, 211);
+  }
+
+  .title{
+    color: white;
+    font-weight: 700;
+    font-size: larger;
+  }
