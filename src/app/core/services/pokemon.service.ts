@@ -11,7 +11,7 @@ export class PokemonsService {
 
   async getPokemons(offset:number) {
     const response = await lastValueFrom(
-      this.httpPokemonService.getPokemonByOffsetAndLimit(offset,20)
+      this.httpPokemonService.getPokemonByOffsetAndLimit(offset,0)
     );3
 
     const pokemonPromises = response.results.map(async (pokemon) => {
