@@ -13,9 +13,12 @@
               <input type="checkbox" class="checkbox" />
             </label> -->
           </th>
+          <th>Id</th>
           <th>Pokemon</th>
           <th>Habilidad Principal</th>
           <th>Tipo</th>
+          <th>altura </th>
+          <th>peso</th>
           <!-- <th>Details</th> -->
         </tr>
       </thead>
@@ -28,6 +31,7 @@
               <input class="ms-4" type="checkbox" id="checkbox-id" class="checkbox" />
             </label>
           </th>
+          <th>{{ pokemon.id }}</th>
           <td>
             <div class="flex items-center gap-3">
               <div class="avatar">
@@ -48,15 +52,20 @@
           <!-- <th>
             <button class="btn btn-ghost btn-xs">details</button>
           </th> -->
+          <td>{{ pokemon.height }}</td>
+          <td>{{ pokemon.weight }}</td>
         </tr>
       </tbody>
       <!-- foot -->
       <tfoot>
         <tr>
           <th></th>
+          <th>Id</th>
           <th>Pokemon</th>
           <th>Habilidad Principal</th>  
           <th>Tipo</th>
+          <th>altura </th>
+          <th>peso</th>
           <!-- <th></th> -->
         </tr>
       </tfoot>
